@@ -6,6 +6,7 @@ export default function makeKaplayCfg() {
 		pixelDensity: 2,
 		touchToMouse: true,
 		debug: true,
+
 		debugKey: 'f4',
 		canvas: document.getElementById('game'),
 	})

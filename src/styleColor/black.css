@@ -1,7 +1,30 @@
+@import url('./index.css');
+
 #color-text {
-	color: black;
+	color: var(--colorText-white);
+}
+
+#color-text2 {
+	color: var(--colorText-black);
 }
 
 body {
-	background-color: white;
+	background-color: var(--background-black);
+}
+
+#background1 {
+	background-color: var(--background-white);
+}
+
+#icon {
+	color: var(--background-black);
+}
+
+#game {
+	border: 2px solid var(--background-white);
+}
+
+#popup {
+	/* opacity: 0.5; */
+	background-color: var(--backgroundPopup-white);
 }

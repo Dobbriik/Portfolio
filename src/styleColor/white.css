@@ -1,7 +1,25 @@
+@import url('./index.css');
+
 #color-text {
-	color: white;
+	color: var(--colorText-black);
+}
+
+#color-text2 {
+	color: var(--colorText-white);
 }
 
 body {
-	background-color: black;
+	background-color: var(--background-white);
+}
+
+#background1 {
+	background-color: var(--background-black);
+}
+
+#icon {
+	color: var(--background-white);
+}
+
+#game {
+	border: 2px solid var(--background-black);
 }

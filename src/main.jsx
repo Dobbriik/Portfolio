@@ -1,14 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import initGame from './app/initGame.js'
-import ReactUi from './ReactUI'
+import initGame from './app/kaplay/initGame.js'
+import ReactUi from './app/react/ReactUI.jsx'
+import { BrowserRouter } from 'react-router-dom'
+import App from './app/app.jsx'
 
-const ui = document.getElementById('ui')
-const root = createRoot(ui)
+const root = createRoot(document.getElementById('ui'))
 root.render(
 	<StrictMode>
-		<ReactUi />
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
 	</StrictMode>
 )
 
-// initGame()
+setTimeout(() => {
+	initGame('main')
+}, 1)

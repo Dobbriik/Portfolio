@@ -1,0 +1,23 @@
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.2s ease;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 4px;
+}
+.btn:hover {
+	transform: scale(1.05);
+}
+
+.btn:active {
+}
+
+.cont {
+	display: flex;
+	justify-content: end;
+	margin: 0 auto;
+	padding: 0.5rem;
+}

@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
-import Component from './components/component'
+import { SunMoon, Sun } from 'lucide-react'
+import style from './menu.module.css'
+import { Link } from 'react-router-dom'
 
-export default function ReactUi() {
+function Menu() {
 	const [theme, setTheme] = useState('white')
 
 	useEffect(() => {
@@ -17,16 +19,19 @@ export default function ReactUi() {
 	}, [theme])
 
 	return (
-		<>
-			<p id='color-text'>Tap to move</p>
-			<Component />
+		<div className={style.cont}>
 			<button
+				id='background1'
+				className={style.btn}
 				onClick={() => {
 					setTheme(() => (theme == 'white' ? 'black' : 'white'))
 				}}
 			>
-				swap
+				{theme == 'white' ? <SunMoon id='icon' /> : <Sun id='icon' />}
 			</button>
-		</>
+			<Link to='/open'>{'open'}</Link>
+		</div>
 	)
 }
+
+export default Menu

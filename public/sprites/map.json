@@ -9,8 +9,8 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":5,
-         "id":1,
-         "name":"home",
+         "id":4,
+         "name":"\u0421\u043b\u043e\u0439 \u0442\u0430\u0439\u043b\u043e\u0432 1",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
@@ -62,7 +62,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":4,
+ "nextlayerid":5,
  "nextobjectid":11,
  "orientation":"orthogonal",
  "renderorder":"right-down",
@@ -75,7 +75,7 @@
         }, 
         {
          "firstgid":2,
-         "source":"..\/..\/..\/..\/home.tsx"
+         "source":"home.tsx"
         }],
  "tilewidth":32,
  "type":"map",
