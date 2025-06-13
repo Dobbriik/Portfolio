@@ -1,10 +1,10 @@
 @import url('./index.css');
 
-#color-text {
+.color-text {
 	color: var(--colorText-black);
 }
 
-#color-text2 {
+.color-text2 {
 	color: var(--colorText-white);
 }
 
@@ -12,14 +12,26 @@ body {
 	background-color: var(--background-white);
 }
 
-#background1 {
+.background1 {
 	background-color: var(--background-black);
 }
 
-#icon {
+.background2 {
+	background-color: var(--background-white);
+}
+
+#popupContainer {
+	border: 2px solid var(--background-black);
+}
+
+.icon {
 	color: var(--background-white);
 }
 
-#game {
-	border: 2px solid var(--background-black);
+.game {
+	border: 5px solid var(--background-black);
+}
+
+.popup-wrap {
+	background-color: var(--backgroundPopup-black);
 }

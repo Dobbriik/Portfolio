@@ -1,84 +1,136 @@
-{ "compressionlevel":-1,
- "height":5,
- "infinite":false,
- "layers":[
-        {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         "height":5,
-         "id":4,
-         "name":"\u0421\u043b\u043e\u0439 \u0442\u0430\u0439\u043b\u043e\u0432 1",
-         "opacity":1,
-         "type":"tilelayer",
-         "visible":true,
-         "width":22,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":3,
-         "name":"floorWall",
-         "objects":[
-                {
-                 "height":39,
-                 "id":7,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":679,
-                 "x":0,
-                 "y":139
-                }, 
-                {
-                 "height":180,
-                 "id":8,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":27,
-                 "x":678,
-                 "y":1
-                }, 
-                {
-                 "height":180,
-                 "id":9,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":32,
-                 "x":-32,
-                 "y":-2
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":false,
-         "x":0,
-         "y":0
-        }],
- "nextlayerid":5,
- "nextobjectid":11,
- "orientation":"orthogonal",
- "renderorder":"right-down",
- "tiledversion":"1.11.2",
- "tileheight":32,
- "tilesets":[
-        {
-         "firstgid":1,
-         "source":"..\/..\/..\/..\/home.tsx"
-        }, 
-        {
-         "firstgid":2,
-         "source":"home.tsx"
-        }],
- "tilewidth":32,
- "type":"map",
- "version":"1.10",
- "width":22
+{
+	"compressionlevel": -1,
+	"height": 5,
+	"infinite": false,
+	"layers": [
+		{
+			"data": [
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0,
+				0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+			],
+			"height": 5,
+			"id": 4,
+			"name": "\u0421\u043b\u043e\u0439 \u0442\u0430\u0439\u043b\u043e\u0432 1",
+			"opacity": 1,
+			"type": "tilelayer",
+			"visible": true,
+			"width": 22,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"draworder": "topdown",
+			"id": 3,
+			"name": "floorWall",
+			"objects": [
+				{
+					"height": 39,
+					"id": 7,
+					"name": "",
+					"rotation": 0,
+					"type": "",
+					"visible": true,
+					"width": 679,
+					"x": 0,
+					"y": 139
+				},
+				{
+					"height": 180,
+					"id": 8,
+					"name": "",
+					"rotation": 0,
+					"type": "",
+					"visible": true,
+					"width": 27,
+					"x": 678,
+					"y": 1
+				},
+				{
+					"height": 180,
+					"id": 9,
+					"name": "",
+					"rotation": 0,
+					"type": "",
+					"visible": true,
+					"width": 32,
+					"x": -32,
+					"y": -2
+				}
+			],
+			"opacity": 1,
+			"type": "objectgroup",
+			"visible": false,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"draworder": "topdown",
+			"id": 5,
+			"name": "skills",
+			"objects": [
+				{
+					"height": 71,
+					"id": 11,
+					"name": "skills",
+					"rotation": 0,
+					"type": "",
+					"visible": true,
+					"width": 59,
+					"x": 18,
+					"y": 65
+				}
+			],
+			"opacity": 1,
+			"type": "objectgroup",
+			"visible": false,
+			"x": 0,
+			"y": 0
+		},
+		{
+			"draworder": "topdown",
+			"id": 6,
+			"name": "arts",
+			"objects": [
+				{
+					"height": 75,
+					"id": 12,
+					"name": "arts",
+					"rotation": 0,
+					"type": "",
+					"visible": true,
+					"width": 53,
+					"x": 508,
+					"y": 62
+				}
+			],
+			"opacity": 1,
+			"type": "objectgroup",
+			"visible": false,
+			"x": 0,
+			"y": 0
+		}
+	],
+	"nextlayerid": 7,
+	"nextobjectid": 14,
+	"orientation": "orthogonal",
+	"renderorder": "right-down",
+	"tiledversion": "1.11.2",
+	"tileheight": 32,
+	"tilesets": [
+		{
+			"firstgid": 1,
+			"source": "../../../../home.tsx"
+		},
+		{
+			"firstgid": 1,
+			"source": "home.tsx"
+		}
+	],
+	"tilewidth": 32,
+	"type": "map",
+	"version": "1.10",
+	"width": 22
 }

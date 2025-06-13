@@ -4,7 +4,22 @@ import style from './menu.module.css'
 import { Link } from 'react-router-dom'
 
 function Menu() {
-	const [theme, setTheme] = useState('white')
+	if (!localStorage.getItem('colorInfo')) {
+		localStorage.setItem('colorInfo', 'white')
+	}
+
+	const [theme, setTheme] = useState(localStorage.getItem('colorInfo'))
+
+	const handleClick = () => {
+		setTheme(() => {
+			if (theme == 'white') {
+				localStorage.setItem('colorInfo', 'black')
+				return 'black'
+			}
+			localStorage.setItem('colorInfo', 'white')
+			return 'white'
+		})
+	}
 
 	useEffect(() => {
 		const link = document.createElement('link')
@@ -20,16 +35,15 @@ function Menu() {
 
 	return (
 		<div className={style.cont}>
-			<button
-				id='background1'
-				className={style.btn}
-				onClick={() => {
-					setTheme(() => (theme == 'white' ? 'black' : 'white'))
-				}}
-			>
-				{theme == 'white' ? <SunMoon id='icon' /> : <Sun id='icon' />}
+			<button className={`background1 ${style.btn}`} onClick={handleClick}>
+				{theme == 'white' ? (
+					<SunMoon className='icon' />
+				) : (
+					<Sun className='icon' />
+				)}
 			</button>
 			<Link to='/open'>{'open'}</Link>
+			<Link to='/arts'>{'arts'}</Link>
 		</div>
 	)
 }

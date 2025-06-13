@@ -3,7 +3,7 @@ import style from './game.module.css'
 function Game() {
 	return (
 		<div className={style.cont}>
-			<canvas id='game' className={style.game}></canvas>
+			<canvas id='game' className={`game ${style.game}`}></canvas>
 		</div>
 	)
 }

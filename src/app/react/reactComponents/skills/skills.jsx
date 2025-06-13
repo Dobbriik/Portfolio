@@ -1,7 +1,7 @@
 function Skills() {
 	return (
 		<div>
-			<h1>Skills</h1>
+			<h1 className='color-text'>Skills</h1>
 		</div>
 	)
 }

@@ -24,13 +24,22 @@ export default async function initGame() {
 			k.sprite('player', { anim: 'idle' }),
 			k.pos(1000, 200),
 			k.scale(scaleFactor),
-			k.area({ shape: new k.Rect(k.vec2(-5, 0), 25, 60) }),
+			k.area({ shape: new k.Rect(k.vec2(0, 0), 25, 60) }),
 			k.anchor('center'),
 			k.body(),
+			{
+				speed: 400,
+				isMoving: false,
+				moveDirection: 0, // -1 = влево, 1 = вправо
+			},
 		])
 
 		player.onUpdate(() => {
-			k.camPos(player.pos)
+			k.setCamPos(player.pos)
+
+			if (player.isMoving) {
+				player.pos.x += player.moveDirection * player.speed * k.dt()
+			}
 		})
 
 		for (const layer of layers) {
@@ -46,7 +55,38 @@ export default async function initGame() {
 					])
 				}
 			}
+			if (layer.name === 'skills') {
+				for (const boundary of layer.objects) {
+					map.add([
+						k.area({
+							shape: new k.Rect(k.vec2(0), boundary.width, boundary.height),
+						}),
+						k.pos(boundary.x, boundary.y),
+						boundary.name,
+					])
+
+					if (boundary.name) {
+						player.onCollide(boundary.name, () => {
+							console.log('skills')
+						})
+					}
+				}
+			}
+
+			if (layer.name === 'arts') {
+				player.onCollide(layer.name, () => {
+					console.log('arts')
+				})
+			}
 		}
+		k.onMouseDown(() => {
+			player.isMoving = true
+			player.moveDirection = k.mousePos().x > k.width() / 2 ? 1 : -1
+		})
+
+		k.onMouseRelease(() => {
+			player.isMoving = false
+		})
 	})
 
 	k.onUpdate(() => {

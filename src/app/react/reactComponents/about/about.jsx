@@ -4,7 +4,9 @@ export default function About() {
 	return (
 		<>
 			<div className={style.cont}>
-				<h2 id='color-text'>Управляй кликом/нажимом что бы узнать обо мне.</h2>
+				<h2 className='color-text'>
+					Управляй кликом/нажимом что бы узнать обо мне.
+				</h2>
 			</div>
 		</>
 	)
